@@ -1,5 +1,0 @@
-- name: Test addition
-  input:
-    num1: 2
-    num2: 3
-  output: 5
