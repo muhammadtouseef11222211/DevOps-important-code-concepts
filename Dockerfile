@@ -2,4 +2,5 @@
 FROM nginx
 
 # Copy the index.html file into the default web server directory
-COPY index.html /usr/share/nginx/html/
+COPY *.html /usr/share/nginx/html/
+COPY assets /usr/share/nginx/html/
