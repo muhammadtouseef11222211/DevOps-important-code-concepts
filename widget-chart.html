@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <title>Mentor - Bootstrap 4 Admin Dashboard Template</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="Admin template that can be used to build dashboards for CRM, CMS, etc." />
+    <meta name="author" content="Potenza Global Solutions" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- app favicon -->
+    <link rel="shortcut icon" href="assets/img/favicon.ico">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <!-- plugin stylesheets -->
+    <link rel="stylesheet" type="text/css" href="assets/css/vendors.css" />
+    <!-- app style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+</head>
+
+<body>
+    <!-- begin app -->
+    <div class="app">
+        <!-- begin app-wrap -->
+        <div class="app-wrap">
+            <!-- begin pre-loader -->
+            <div class="loader">
+                <div class="h-100 d-flex justify-content-center">
+                    <div class="align-self-center">
+                        <img src="assets/img/loader/loader.svg" alt="loader">
+                    </div>
+                </div>
+            </div>
+            <!-- end pre-loader -->
+            <!-- begin app-header -->
+            <header class="app-header top-bar">
+                <!-- begin navbar -->
+                <nav class="navbar navbar-expand-md">
+
+                    <!-- begin navbar-header -->
+                    <div class="navbar-header d-flex align-items-center">
+                        <a href="javascript:void:(0)" class="mobile-toggle"><i class="ti ti-align-right"></i></a>
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/img/logo.png" class="img-fluid logo-desktop" alt="logo" />
+                            <img src="assets/img/logo-icon.png" class="img-fluid logo-mobile" alt="logo" />
+                        </a>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="ti ti-align-left"></i>
+                    </button>
+                    <!-- end navbar-header -->
+                    <!-- begin navigation -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <div class="navigation d-flex">
+                            <ul class="navbar-nav nav-left">
+                                <li class="nav-item">
+                                    <a href="javascript:void(0)" class="nav-link sidebar-toggle">
+                                        <i class="ti ti-align-right"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link  " href="javascript:void(0)" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Mega Menu
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu mega-menu animated fadeIn" aria-labelledby="navbarDropdown">
+                                        <div class="row no-gutters">
+                                            <div class="col-sm-2 p-20">
+                                                <h4>UI Kit</h4>
+                                                <ul>
+                                                    <li class="nav-link">
+                                                        <a href="ui-alerts.html">Alerts</a>
+                                                    </li>
+                                                    <li class="nav-link">
+                                                        <a href="ui-button.html">Buttons</a>
+                                                    </li>
+                                                    <li class="nav-link">
+                                                        <a href="ui-cards.html">Cards</a>
+                                                    </li>
+                                                    <li class="nav-link">
+                                                        <a href="ui-carousel.html">Carousel</a>
+                                                    </li>
+
+                                                    <li class="nav-link">
+                                                        <a href="ui-dropdowns.html">Dropdowns</a>
+                                                    </li>
+                                                    <li class="nav-link">
+                                                        <a href="ui-list-group.html">List Group</a>
+                                                    </li>
+                                                    <li class="nav-link">
+                                                        <a href="ui-modals.html">Modals</a>
+                                                    </li>
+                                                    <li class="nav-link">
+                                                        <a href="ui-progressbars.html">Progress Bars</a>
+                                                    </li>
+                                                    <li class="nav-link">
+                                                        <a href="ui-tabs.html">Tabs</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-2 p-20">
+                                                <h4>Pages</h4>
+                                                <ul>
+                                                    <li class="nav-link">
+                                                        <a href="page-account-settings.html">Account Settings</a>
+                                                    </li>
+                                                    <li class="nav-link">
+                                                        <a href="page-clients.html">Clients</a>
+                                                    </li>
+                                                    <li class="nav-link">
+                                                        <a href="page-contacts.html">Contacts</a>
+                                                    </li>
+                                                    <li class="nav-link">
+                                                        <a href="page-gallery.html">Gallery</a>
+                                                    </li>
+                                                    <li class="nav-link">
+                                                        <a href="page-pricing.html">Pricing</a>
+                                                    </li>
+                                                    <li class="nav-link">
+                                                        <a href="page-task-list.html">Task List</a>
+                                                    </li>
+                                                    <li class="nav-link">
+                                                        <a href="page-404.html">404</a>
+                                                    </li>
+                                                    <li class="nav-link">
+                                                        <a href="page-500.html">500</a>
+                                                    </li>
+                                                    <li class="nav-link">
+                                                        <a href="page-coming-soon.html">Coming Soon</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="col-sm-4 p-20">
+                                                <h4>Contact Us</h4>
+                                                <div>
+                                                    <form>
+                                                        <div class="form-group">
+                                                            <input type="text" class="form-control" id="Password1" placeholder="Enter Name">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <input type="email" class="form-control" id="Email1" placeholder="Enter Email">
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <textarea class="form-control" placeholder="Message" id="Textarea1" rows="3"></textarea>
+                                                        </div>
+                                                        <button type="submit" class="btn btn-primary text-uppercase">Submit</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="chart-wrap">
+                                                    <div class="p-20">
+                                                        <h4 class="mb-1">Page Views</h4>
+                                                        <p>Daily page visitors</p>
+                                                        <h2 class="text-primary font-xxl mt-2">80+</h2>
+                                                    </div>
+                                                    <div class="apexchart-wrapper">
+                                                        <div id="pageview"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a href="javascript:void(0)" class="nav-link " id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Drop Down
+                                        <i class="fa fa-angle-down"></i>
+                                    </a>
+                                    <div class="dropdown-menu animated fadeIn" aria-labelledby="navbarDropdown">
+                                        <a class="dropdown-item nav-link" href="javascript:void(0)">Action</a>
+                                        <a class="dropdown-item nav-link" href="javascript:void(0)">Another action</a>
+                                        <a class="dropdown-item nav-link" href="javascript:void(0)">Something else here</a>
+                                    </div>
+                                </li>
+                                <li class="nav-item full-screen d-none d-lg-block" id="btnFullscreen">
+                                    <a href="javascript:void(0)" class="nav-link expand">
+                                        <i class="icon-size-fullscreen"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav nav-right ml-auto">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown2" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="ti ti-email"></i>
+                                    </a>
+                                    <div class="dropdown-menu extended animated fadeIn" aria-labelledby="navbarDropdown">
+                                        <ul>
+                                            <li class="dropdown-header bg-gradient p-4 text-white text-left">Messages
+                                                <label class="label label-info label-round">6</label>
+                                                <a href="#" class="float-right btn btn-square btn-inverse-light btn-xs m-0">
+                                                    <span class="font-13"> Mark all as read</span></a>
+                                            </li>
+                                            <li class="dropdown-body">
+                                                <ul class="scrollbar scroll_dark max-h-240">
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <div class="notification d-flex flex-row align-items-center">
+                                                                <div class="notify-icon bg-img align-self-center">
+                                                                    <img class="img-fluid" src="assets/img/avtar/03.jpg" alt="user3">
+                                                                </div>
+                                                                <div class="notify-message">
+                                                                    <p class="font-weight-bold">Brianing Leyon</p>
+                                                                    <small>You will sail along until you...</small>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <div class="notification d-flex flex-row align-items-center">
+                                                                <div class="notify-icon bg-img align-self-center">
+                                                                    <img class="img-fluid" src="assets/img/avtar/01.jpg" alt="user">
+                                                                </div>
+                                                                <div class="notify-message">
+                                                                    <p class="font-weight-bold">Jimmyimg Leyon</p>
+                                                                    <small>Okay</small>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <div class="notification d-flex flex-row align-items-center">
+                                                                <div class="notify-icon bg-img align-self-center">
+                                                                    <img class="img-fluid" src="assets/img/avtar/02.jpg" alt="user2">
+                                                                </div>
+                                                                <div class="notify-message">
+                                                                    <p class="font-weight-bold">Brainjon Leyon</p>
+                                                                    <small>So, make the decision...</small>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <div class="notification d-flex flex-row align-items-center">
+                                                                <div class="notify-icon bg-img align-self-center">
+                                                                    <img class="img-fluid" src="assets/img/avtar/04.jpg" alt="user4">
+                                                                </div>
+                                                                <div class="notify-message">
+                                                                    <p class="font-weight-bold">Smithmin Leyon</p>
+                                                                    <small>Thanks</small>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <div class="notification d-flex flex-row align-items-center">
+                                                                <div class="notify-icon bg-img align-self-center">
+                                                                    <img class="img-fluid" src="assets/img/avtar/05.jpg" alt="user5">
+                                                                </div>
+                                                                <div class="notify-message">
+                                                                    <p class="font-weight-bold">Jennyns Leyon</p>
+                                                                    <small>How are you</small>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <div class="notification d-flex flex-row align-items-center">
+                                                                <div class="notify-icon bg-img align-self-center">
+                                                                    <img class="img-fluid" src="assets/img/avtar/06.jpg" alt="user6">
+                                                                </div>
+                                                                <div class="notify-message">
+                                                                    <p class="font-weight-bold">Demian Leyon</p>
+                                                                    <small>I like your themes</small>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-footer">
+                                                <a class="font-13" href="javascript:void(0)"> View All messages </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="fe fe-bell"></i>
+                                        <span class="notify">
+                                                    <span class="blink"></span>
+                                        <span class="dot"></span>
+                                        </span>
+                                    </a>
+                                    <div class="dropdown-menu extended animated fadeIn" aria-labelledby="navbarDropdown">
+                                        <ul>
+                                            <li class="dropdown-header bg-gradient p-4 text-white text-left">Notifications
+                                                <a href="#" class="float-right btn btn-square btn-inverse-light btn-xs m-0">
+                                                    <span class="font-13"> Clear all</span></a>
+                                            </li>
+                                            <li class="dropdown-body min-h-240 nicescroll">
+                                                <ul class="scrollbar scroll_dark max-h-240">
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <div class="notification d-flex flex-row align-items-center">
+                                                                <div class="notify-icon bg-img align-self-center">
+                                                                    <div class="bg-type bg-type-md">
+                                                                        <span>HY</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="notify-message">
+                                                                    <p class="font-weight-bold">New registered user</p>
+                                                                    <small>Just now</small>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <div class="notification d-flex flex-row align-items-center">
+                                                                <div class="notify-icon bg-img align-self-center">
+                                                                    <div class="bg-type bg-type-md bg-success">
+                                                                        <span>GM</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="notify-message">
+                                                                    <p class="font-weight-bold">New invoice received</p>
+                                                                    <small>22 min</small>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <div class="notification d-flex flex-row align-items-center">
+                                                                <div class="notify-icon bg-img align-self-center">
+                                                                    <div class="bg-type bg-type-md bg-danger">
+                                                                        <span>FR</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="notify-message">
+                                                                    <p class="font-weight-bold">Server error report</p>
+                                                                    <small>7 min</small>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <div class="notification d-flex flex-row align-items-center">
+                                                                <div class="notify-icon bg-img align-self-center">
+                                                                    <div class="bg-type bg-type-md bg-info">
+                                                                        <span>HT</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="notify-message">
+                                                                    <p class="font-weight-bold">Database report</p>
+                                                                    <small>1 day</small>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="javascript:void(0)">
+                                                            <div class="notification d-flex flex-row align-items-center">
+                                                                <div class="notify-icon bg-img align-self-center">
+                                                                    <div class="bg-type bg-type-md">
+                                                                        <span>DE</span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="notify-message">
+                                                                    <p class="font-weight-bold">Order confirmation</p>
+                                                                    <small>2 day</small>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li class="dropdown-footer">
+                                                <a class="font-13" href="javascript:void(0)"> View All Notifications
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link search" href="javascript:void(0)">
+                                        <i class="ti ti-search"></i>
+                                    </a>
+                                    <div class="search-wrapper">
+                                        <div class="close-btn">
+                                            <i class="ti ti-close"></i>
+                                        </div>
+                                        <div class="search-content">
+                                            <form>
+                                                <div class="form-group">
+                                                    <i class="ti ti-search magnifier"></i>
+                                                    <input type="text" class="form-control autocomplete" placeholder="Search Here" id="autocomplete-ajax" autofocus="autofocus">
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="nav-item dropdown user-profile">
+                                    <a href="javascript:void(0)" class="nav-link dropdown-toggle " id="navbarDropdown4" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <img src="assets/img/avtar/02.jpg" alt="avtar-img">
+                                        <span class="bg-success user-status"></span>
+                                    </a>
+                                    <div class="dropdown-menu animated fadeIn" aria-labelledby="navbarDropdown">
+                                        <div class="bg-gradient px-4 py-3">
+                                            <div class="d-flex align-items-center justify-content-between">
+                                                <div class="mr-1">
+                                                    <h4 class="text-white mb-0">Alice Williams</h4>
+                                                    <small class="text-white">Henry@example.com</small>
+                                                </div>
+                                                <a href="#" class="text-white font-20 tooltip-wrapper" data-toggle="tooltip" data-placement="top" title="" data-original-title="Logout"> <i
+                                                                class="zmdi zmdi-power"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="p-4">
+                                            <a class="dropdown-item d-flex nav-link" href="javascript:void(0)">
+                                                <i class="fa fa-user pr-2 text-success"></i> Profile</a>
+                                            <a class="dropdown-item d-flex nav-link" href="javascript:void(0)">
+                                                <i class="fa fa-envelope pr-2 text-primary"></i> Inbox
+                                                <span class="badge badge-primary ml-auto">6</span>
+                                            </a>
+                                            <a class="dropdown-item d-flex nav-link" href="javascript:void(0)">
+                                                <i class=" ti ti-settings pr-2 text-info"></i> Settings
+                                            </a>
+                                            <a class="dropdown-item d-flex nav-link" href="javascript:void(0)">
+                                                <i class="fa fa-compass pr-2 text-warning"></i> Need help?</a>
+                                            <div class="row mt-2">
+                                                <div class="col">
+                                                    <a class="bg-light p-3 text-center d-block" href="#">
+                                                        <i class="fe fe-mail font-20 text-primary"></i>
+                                                        <span class="d-block font-13 mt-2">My messages</span>
+                                                    </a>
+                                                </div>
+                                                <div class="col">
+                                                    <a class="bg-light p-3 text-center d-block" href="#">
+                                                        <i class="fe fe-plus font-20 text-primary"></i>
+                                                        <span class="d-block font-13 mt-2">Compose new</span>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end navigation -->
+                </nav>
+                <!-- end navbar -->
+            </header>
+            <!-- end app-header -->
+            <!-- begin app-container -->
+            <div class="app-container">
+                <!-- begin app-nabar -->
+                <aside class="app-navbar">
+                    <!-- begin sidebar-nav -->
+                    <div class="sidebar-nav scrollbar scroll_light">
+                        <ul class="metismenu " id="sidebarNav">
+                            <li class="nav-static-title">Personal</li>
+                            <li>
+                                <a class="has-arrow" href="javascript:void(0)" aria-expanded="false">
+                                    <i class="nav-icon ti ti-rocket"></i>
+                                    <span class="nav-title">Dashboards</span>
+                                    <span class="nav-label label label-danger">9</span>
+                                </a>
+                                <ul aria-expanded="false">
+                                    <li> <a href='index.html'>Default</a> </li>
+                                    <li> <a href='index-ecommerce.html'>Ecommerce</a> </li>
+                                    <li> <a href='index-car-dealer.html'>Car Dealer</a> </li>
+                                    <li> <a href='index-stock-market.html'>Stock Market</a> </li>
+                                    <li> <a href='index-dating.html'>Dating</a> </li>
+                                    <li> <a href='index-job-portal.html'>Job Portal</a> </li>
+                                    <li> <a href='index-crm.html'>CRM</a> </li>
+                                    <li> <a href='index-real-estate.html'>Real Estate</a> </li>
+                                    <li> <a href='index-crypto-currency.html'>Crypto Currency</a> </li>
+                                </ul>
+                            </li>
+                            <li><a href="app-chat.html" aria-expanded="false"><i class="nav-icon ti ti-comment"></i><span class="nav-title">Chat</span></a> </li>
+                            <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-calendar"></i><span class="nav-title">Calendar</span></a>
+                                <ul aria-expanded="false">
+                                    <li> <a href='calendar-full.html'>Full Calendar</a> </li>
+                                    <li> <a href='calendar-list.html'>Calendar List</a> </li>
+                                </ul>
+                            </li>
+                            <li><a href="mail-inbox.html" aria-expanded="false"><i class="nav-icon ti ti-email"></i><span class="nav-title">Mail</span></a> </li>
+                            <li>
+                                <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-bag"></i> <span class="nav-title">UI Kit</span></a>
+                                <ul aria-expanded="false">
+                                    <li> <a href="ui-alerts.html">Alerts</a> </li>
+                                    <li> <a href="ui-accordions.html">Accordions</a> </li>
+                                    <li> <a class="has-arrow" href="javascript: void(0);">Buttons</a>
+                                        <ul aria-expanded="false">
+                                            <li> <a href="ui-button.html">Default Buttons</a> </li>
+                                            <li> <a href="ui-button-icon.html">Icon Buttons</a> </li>
+                                            <li> <a href="ui-button-block.html">Block Buttons</a> </li>
+                                            <li> <a href="ui-button-social.html">Social Buttons</a> </li>
+                                            <li> <a href="ui-button-groups.html">Group Buttons</a> </li>
+                                        </ul>
+                                    </li>
+                                    <li> <a href="ui-badges.html">Badges</a> </li>
+                                    <li> <a href="ui-cards.html">Cards</a> </li>
+                                    <li> <a href="ui-carousel.html">Carousel</a> </li>
+                                    <li> <a href="ui-dropdowns.html">Dropdowns</a> </li>
+
+                                    <li> <a href="ui-grid.html">Grid</a> </li>
+                                    <li> <a href="ui-list-group.html">List Group</a> </li>
+                                    <li> <a href="ui-lightbox.html">Light Box</a> </li>
+                                    <li> <a href="ui-modals.html">Modals</a> </li>
+                                    <li> <a href="ui-media.html">Media</a> </li>
+                                    <li> <a href="ui-nestable-list.html">Nestable List</a> </li>
+                                    <li> <a href="ui-pagination.html">Pagination</a> </li>
+                                    <li> <a href="ui-progressbars.html">Progress Bars</a> </li>
+
+                                    <li> <a href="ui-sweet-alert.html">Sweet Alert</a> </li>
+                                    <li> <a href="ui-tabs.html">Tabs</a> </li>
+                                    <li> <a href="ui-nav.html">Nav</a> </li>
+                                    <li> <a href="ui-tooltips-popovers.html">Tooltips & Popovers</a> </li>
+                                    <li> <a href="ui-typography.html">Typography</a> </li>
+                                    <li> <a href="ui-toastr.html">Toastr</a> </li>
+                                    <li> <a href="ui-video.html">Video</a> </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-info"></i><span class="nav-title">Icons</span> </a>
+                                <ul aria-expanded="false">
+                                    <li> <a href="icons-cryptocurrency.html">Cryptocurrency Icons</a> </li>
+                                    <li> <a href="icons-drip.html">Drip Icons</a> </li>
+                                    <li> <a href="icons-dash.html">Dash Icons</a> </li>
+                                    <li> <a href="icons-feather.html">Feather Icons</a> </li>
+                                    <li> <a href="icons-fontawesome.html">Font Awesome</a> </li>
+                                    <li> <a href="icons-ion.html">Ion Icons</a> </li>
+                                    <li> <a href="icons-weather.html">Weather Icons</a> </li>
+                                    <li> <a href="icons-material.html">Material Icons</a> </li>
+                                    <li> <a href="icons-themify.html">Themify Icons</a> </li>
+                                </ul>
+                            </li>
+                            <li class="nav-static-title">Widgets, Tables & Layouts</li>
+                            <li class="active">
+                                <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"> <i class="nav-icon ti ti-layout-grid4-alt"></i> <span class="nav-title">Widgets</span> <span class="nav-label label label-success">New</span> </a>
+                                <ul aria-expanded="false">
+                                    <li class="active"> <a href="widget-chart.html">Chart Widget</a> </li>
+
+                                    <li> <a href="widget-list.html">List Widget</a> </li>
+
+                                    <li> <a href="widget-social.html">Social Widget</a> </li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-layout-column3-alt"></i><span class="nav-title">Tables</span></a>
+                                <ul aria-expanded="false">
+                                    <li> <a href="tables-basic.html">Basic Table</a> </li>
+                                    <li> <a href="tables-color.html">Color Table </a> </li>
+                                    <li> <a href="tables-datatable.html">Data Table</a> </li>
+                                    <li> <a href="tables-editable.html">Editable Table</a> </li>
+                                    <li> <a href="tables-export.html">Export Table</a> </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-layout"></i> <span class="nav-title">Layouts</span></a>
+                                <ul aria-expanded="false">
+                                    <li><a href="layout-mini.html">Sidebar Mini</a></li>
+
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-pie-chart"></i><span class="nav-title">Charts</span></a>
+                                <ul aria-expanded="false">
+                                    <li> <a href="chart-apex.html">Apex Chart</a> </li>
+                                    <li> <a href="chart-flot.html">Flot Chart</a> </li>
+                                    <li> <a href="chart-morris.html">Morris Chart</a> </li>
+                                    <li> <a href="chart-chartist.html">Chartist Charts</a> </li>
+                                    <li> <a href="chart-chartjs.html">Chartjs Chart</a> </li>
+                                    <li> <a href="chart-c3.html">C3 Chart</a> </li>
+                                    <li> <a href="chart-sparkline.html">Sparkline Chart</a> </li>
+                                    <li> <a href="chart-knob.html">Knob Chart</a> </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"> <i class="nav-icon ti ti-pencil-alt"></i> <span class="nav-title">Forms</span> </a>
+                                <ul aria-expanded="false">
+                                    <li> <a href="form-autonumeric.html">Autonumeric</a> </li>
+                                    <li> <a href="form-editors.html">Editors</a> </li>
+                                    <li> <a href="form-elements.html">Elements</a> </li>
+                                    <li> <a href="form-file-upload.html">Drop Zone
+                                        </a> </li>
+                                    <li> <a href="form-input-groups.html">Input Groups</a> </li>
+                                    <li> <a href="form-inputmask.html">Input Masks</a> </li>
+                                    <li> <a href="form-layouts.html">Forms Layouts</a> </li>
+                                    <li> <a href="form-listbox.html">Listbox</a> </li>
+                                    <li> <a href="form-pickers.html">Pickers</a> </li>
+                                    <li> <a href="form-range-slider.html">Range Slider</a> </li>
+                                    <li> <a href="form-selects.html">Selects</a> </li>
+                                    <li> <a href="form-switchers.html">Switchers</a> </li>
+                                    <li> <a href="form-validation.html">Validation</a> </li>
+                                </ul>
+                            </li>
+                            <li class="nav-static-title">Extra Components</li>
+                            <li>
+                                <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-map-alt"></i><span class="nav-title">Maps</span></a>
+                                <ul aria-expanded="false">
+                                    <li> <a href="maps-google.html">Google Maps</a> </li>
+                                    <li> <a href="maps-vector.html">Vector Maps</a> </li>
+                                    <li> <a href="maps-mapael.html">Mapael Maps</a> </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-layers"></i><span class="nav-title">Pages</span><span class="nav-label label label-primary">12</span></a>
+                                <ul aria-expanded="false">
+                                    <li> <a href="page-account-settings.html">Account Settings</a> </li>
+                                    <li> <a href="page-clients.html">Clients</a> </li>
+                                    <li> <a href="page-contacts.html">Contacts</a> </li>
+                                    <li> <a href="page-employees.html">Employees</a> </li>
+                                    <li> <a href="page-faq.html">FAQ</a> </li>
+                                    <li> <a href="page-file-manager.html">File Manager</a> </li>
+                                    <li> <a href="page-gallery.html">Gallery</a> </li>
+
+                                    <li> <a href="page-pricing.html">Pricing</a> </li>
+                                    <li> <a href="page-task-list.html">Task List</a> </li>
+                                    <li> <a href="page-404.html">404</a> </li>
+                                    <li> <a href="page-500.html">500</a> </li>
+                                    <li> <a href="page-coming-soon.html">Coming Soon</a> </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-key"></i><span class="nav-title">Auth</span></a>
+                                <ul aria-expanded="false">
+                                    <li> <a href="auth-login.html">Login</a> </li>
+                                    <li> <a href="auth-register.html">Register</a> </li>
+                                    <li> <a href="auth-lockscreen.html">Lock Screen</a> </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a class="has-arrow" href="javascript:void(0)" aria-expanded="false"><i class="nav-icon ti ti-list"></i><span class="nav-title">Multi Level</span></a>
+                                <ul aria-expanded="false">
+                                    <li> <a href="javascript: void(0);">Level 1.1</a> </li>
+                                    <li class="scoop-hasmenu">
+                                        <a class="has-arrow" href="javascript: void(0);">Level 1.2</a>
+                                        <ul aria-expanded="false">
+                                            <li> <a href="javascript: void(0);">Level 2.1</a> </li>
+                                            <li> <a href="javascript: void(0);">Level 2.2</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="sidebar-banner p-4 bg-gradient text-center m-3 d-block rounded">
+                                <h5 class="text-white mb-1">Mentor admin</h5>
+                                <p class="font-13 text-white line-20">Multipurpose Bootstrap 4 Admin Template</p>
+                                <a class="btn btn-square btn-inverse-light btn-xs d-inline-block mt-2 mb-0" href="#"> Buy now</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- end sidebar-nav -->
+                </aside>
+                <!-- end app-navbar -->
+                <!-- begin app-main -->
+                <div class="app-main" id="main">
+                    <!-- begin container-fluid -->
+                    <div class="container-fluid">
+                        <!-- begin row -->
+                        <div class="row">
+                            <div class="col-md-12 m-b-30">
+                                <!-- begin page title -->
+                                <div class="d-block d-sm-flex flex-nowrap align-items-center">
+                                    <div class="page-title mb-2 mb-sm-0">
+                                        <h1>Chart Widget</h1>
+                                    </div>
+                                    <div class="ml-auto d-flex align-items-center">
+                                        <nav>
+                                            <ol class="breadcrumb p-0 m-b-0">
+                                                <li class="breadcrumb-item">
+                                                    <a href="index.html"><i class="ti ti-home"></i></a>
+                                                </li>
+                                                <li class="breadcrumb-item">
+                                                    Widgets
+                                                </li>
+                                                <li class="breadcrumb-item active text-primary" aria-current="page">Chart Widget</li>
+                                            </ol>
+                                        </nav>
+                                    </div>
+                                </div>
+                                <!-- end page title -->
+                            </div>
+                        </div>
+                        <!-- end row -->
+                        <!-- start chart contant -->
+                        <div class="row">
+                            <div class="col-12 col-lg-12 col-xxl-7 m-b-30">
+                                <div class="card card-statistics h-100 mb-0 apexchart-tool-force-top">
+                                    <div class="card-header d-flex justify-content-between">
+                                        <div class="card-heading">
+                                            <div class="card-heading">
+                                                <h4 class="card-title">Site activity</h4>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-12 col-xs-6 col-lg-3">
+                                                <div class="row mb-2 pb-3 align-items-end">
+                                                    <div class="col">
+                                                        <p>Users</p>
+                                                        <h3 class="tex-dark mb-0">8.6K</h3>
+                                                    </div>
+                                                    <div class="col ml-auto">
+                                                        <span><i class="fa fa-arrow-down"></i> 2.5%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-xs-6 col-lg-3">
+                                                <div class="row mb-2 pb-3 align-items-end">
+                                                    <div class="col">
+                                                        <p>Revenue</p>
+                                                        <h3 class="tex-dark mb-0">176K</h3>
+                                                    </div>
+                                                    <div class="col ml-auto">
+                                                        <span><i class="fa fa-arrow-up"></i> 15%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-xs-6 col-lg-3">
+                                                <div class="row mb-2 pb-3 align-items-end">
+                                                    <div class="col">
+                                                        <p>Rate</p>
+                                                        <h3 class="tex-dark mb-0">6.2K</h3>
+                                                    </div>
+                                                    <div class="col ml-auto">
+                                                        <span><i class="fa fa-arrow-down"></i> 6.5%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-xs-6 col-lg-3">
+                                                <div class="row mb-2 pb-3 align-items-end">
+                                                    <div class="col">
+                                                        <p>Sessions</p>
+                                                        <h3 class="tex-dark mb-0">44K</h3>
+                                                    </div>
+                                                    <div class="col ml-auto">
+                                                        <span><i class="fa fa-arrow-down"></i> 1.8%</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12 px-0">
+                                                <div class="apexchart-wrapper">
+                                                    <div id="analytics1"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-12 col-xxl-5 m-b-30">
+                                <div class="card card-statistics h-100 mb-0">
+                                    <div class="card-header">
+                                        <div class="card-heading">
+                                            <h4 class="card-title">Yearly Sales Report</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card-body pb-0">
+                                        <div class="row m-b-20">
+                                            <div class="col-xxs-6 col-md-4">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="icon-container img-icon m-r-20 bg-light-gray rounded">
+                                                        <i class="fa fa-cart-plus text-primary"></i>
+                                                    </div>
+                                                    <div class="report-details">
+                                                        <p>Annual Sales</p>
+                                                        <h3>15,236</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xxs-6 col-md-4">
+                                                <div class="d-flex align-items-center">
+                                                    <div class="icon-container img-icon m-r-20 bg-light-gray rounded">
+                                                        <i class="fa fa-dollar text-primary"></i>
+                                                    </div>
+                                                    <div class="report-details">
+                                                        <p>Annual Revenue</p>
+                                                        <h3>$40,516</h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row no-gutters">
+                                            <div class="col-12">
+                                                <div class="apexchart-wrapper">
+                                                    <div id="ecommerce5" class="chart-fit"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-6 col-xxl-4 m-b-30">
+                                <div class="card card-statistics h-100 mb-0">
+                                    <div class="card-header d-flex justify-content-between">
+                                        <div class="card-heading">
+                                            <div class="card-heading">
+                                                <h4 class="card-title">Sales</h4>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <select class="custom-select custom-select-sm" id="inputGroupSelect01">
+                                                <option selected>Choose...</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="border-bottom pb-4">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <span class="font-17">Total revenue</span>
+                                                    <h3 class="mt-1">$45,541</h3>
+                                                    <span class="d-block"> <i class="fa fa-arrow-down text-primary"></i> <b class="text-primary">+23%</b> Vs last months </span>
+                                                </div>
+                                                <div class="col">
+                                                    <span class="font-17">Total cost</span>
+                                                    <h3 class="mt-1">$6,456</h3>
+                                                    <span class="d-block"> <i class="fa fa-arrow-down text-cyan"></i> <b class="text-cyan">+65%</b> Vs last months </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col pt-4">
+                                                <div class="d-flex justify-content-between">
+                                                    <span class="font-16"><b>86</b> Deals added</span>
+                                                    <span class="font-16"><b>65%</b> of goal</span>
+                                                </div>
+                                                <div class="progress my-3" style="height: 6px;">
+                                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 66%;" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col pt-4">
+                                                <div class="d-flex justify-content-between">
+                                                    <span class="font-16"><b>78</b> Project closed</span>
+                                                    <span class="font-16"><b>45%</b> of goal</span>
+                                                </div>
+                                                <div class="progress my-3" style="height: 6px;">
+                                                    <div class="progress-bar bg-cyan" role="progressbar" style="width: 66%;" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="apexchart-wrapper">
+                                            <div id="analytics3" class="chart-fit"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6 col-xxl-4 m-b-30">
+                                <div class="card card-statistics h-100 mb-0">
+                                    <div class="card-header d-flex justify-content-between">
+                                        <div class="card-heading">
+                                            <div class="card-heading">
+                                                <h4 class="card-title">Lifetime sales</h4>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <a class="p-2" href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fe fe-circle"></i>
+                                            </a>
+                                            <div class="dropdown-menu custom-dropdown dropdown-menu-right p-4">
+                                                <h6 class="mb-1">Action</h6>
+                                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-file-o pr-2"></i>View reports</a>
+                                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-edit pr-2"></i>Edit reports</a>
+                                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-bar-chart-o pr-2"></i>Statistics</a>
+                                                <h6 class="mb-1 mt-3">Export</h6>
+                                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-file-pdf-o pr-2"></i>Export to PDF</a>
+                                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-file-excel-o pr-2"></i>Export to CSV</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <h5>We only started collecting data from February 2019 </h5>
+                                        <p>Questions about the Net Earnings number? <a class="btn btn-square btn-inverse-success btn-xs ml-1" href="#">Click here</a> </p>
+                                        <div class="row mt-4">
+                                            <div class="col-lg-8">
+                                                <div class="morris-wrapper">
+                                                    <div id="morrisecommerce1" style="height: 260px;"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 mt-4">
+                                                <div class="mb-3">
+                                                    <h3 class="mb-0">680</h3>
+                                                    <p class="mb-0 text-info">Total sales</p>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <h3 class="mb-0">800</h3>
+                                                    <p class="mb-0 text-primary">Open campaign</p>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <h3 class="mb-0">500</h3>
+                                                    <p class="mb-0">Daily sales</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xxl-4 m-b-30">
+                                <div class="card card-statistics h-100 mb-0">
+                                    <div class="card-header">
+                                        <div class="card-heading">
+                                            <h4 class="card-title">Page views</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="text-right">
+                                            <span class="mr-3"><i class="fa fa-square pr-1 text-primary"></i> User</span>
+                                            <span><i class="fa fa-square pr-1 text-info"></i> Page view</span>
+                                        </div>
+                                        <div class="apexchart-wrapper">
+                                            <div id="cardealerdemo3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-xxl-3">
+                                <div class="card card-statistics ecommerce-contant overflow-h">
+                                    <div class="card-body p-0">
+                                        <div class="d-flex m-b-0 ecommerce-contant-text h-100">
+                                            <div class="w-100">
+                                                <div class="row p-3">
+                                                    <div class="col">
+                                                        <h3 class="mb-0">$65,456</h3>
+                                                        <small class="d-block">Last 6 months</small>
+                                                    </div>
+                                                    <div class="col text-right">
+                                                        <h5 class="text-muted mb-0">Revenue</h5>
+                                                        <strong class="text-danger m-t-5"><i class="zmdi zmdi-long-arrow-up font-weight-bold"></i> N/A</strong>
+                                                    </div>
+                                                </div>
+                                                <div class="apexchart-wrapper">
+                                                    <div id="ecommercedemo3" class="chart-fit"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xxl-3">
+                                <div class="card card-statistics ecommerce-contant overflow-h">
+                                    <div class="card-body p-0">
+                                        <div class="d-flex ecommerce-contant-text m-b-0 h-100">
+                                            <div class="w-100">
+                                                <div class="row p-3">
+                                                    <div class="col">
+                                                        <h3 class="mb-0">52%</h3>
+                                                        <small class="d-block">Past 12 hours</small>
+                                                    </div>
+                                                    <div class="col text-right">
+                                                        <h5 class="text-muted mb-0">Conversion Rate</h5>
+                                                        <strong class="text-primary m-t-5"><i class="zmdi zmdi-long-arrow-up font-weight-bold"></i> 5.35%</strong>
+                                                    </div>
+                                                </div>
+                                                <div class="apexchart-wrapper">
+                                                    <div id="ecommercedemo1" class="chart-fit"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xxl-3">
+                                <div class="card card-statistics ecommerce-contant overflow-h">
+                                    <div class="card-body p-0">
+                                        <div class="d-flex m-b-0 ecommerce-contant-text h-100">
+                                            <div class="w-100">
+                                                <div class="w-100">
+                                                    <div class="row p-3">
+                                                        <div class="col">
+                                                            <h3 class="mb-0">605</h3>
+                                                            <small class="d-block">Last 90 days</small>
+                                                        </div>
+                                                        <div class="col text-right">
+                                                            <h5 class="text-muted mb-0">Transactions</h5>
+                                                            <strong class="text-orange m-t-5"><i class="zmdi zmdi-long-arrow-up font-weight-bold"></i> 4.65%</strong>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="apexchart-wrapper">
+                                                    <div id="ecommercedemo2" class="chart-fit"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-xxl-3">
+                                <div class="card card-statistics ecommerce-contant overflow-h">
+                                    <div class="card-body p-0">
+                                        <div class="d-flex m-b-0 ecommerce-contant-text h-100">
+                                            <div class="w-100">
+                                                <div class="row p-3">
+                                                    <div class="col">
+                                                        <h3 class="mb-0">5,687</h3>
+                                                        <small class="d-block">Last 3 months</small>
+                                                    </div>
+                                                    <div class="col text-right">
+                                                        <h5 class="text-muted mb-0">Purchases</h5>
+                                                        <strong class="text-success m-t-5"><i class="zmdi zmdi-long-arrow-up font-weight-bold"></i> 9.89%</strong>
+                                                    </div>
+                                                </div>
+                                                <div class="apexchart-wrapper">
+                                                    <div id="ecommercedemo4" class="chart-fit"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xxl-4 m-b-30">
+                                <div class="card card-statistics h-100 mb-0">
+                                    <div class="card-header">
+                                        <div class="card-heading">
+                                            <h4 class="card-title">Actual vs Budget hours</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card-body pt-0">
+                                        <div class="apexchart-wrapper">
+                                            <div id="stockmarket7"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xxl-5 m-b-30">
+                                <div class="card card-statistic car-dealer-contants h-100 mb-0">
+                                    <div class="card-header d-flex justify-content-between">
+                                        <div class="card-heading">
+                                            <div class="card-heading">
+                                                <h4 class="card-title">Sale Analysis Trend</h4>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <a class="p-2" href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fe fe-more-horizontal"></i>
+                                            </a>
+                                            <div class="dropdown-menu custom-dropdown dropdown-menu-right p-4">
+                                                <h6 class="mb-1">Action</h6>
+                                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-file-o pr-2"></i>View reports</a>
+                                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-edit pr-2"></i>Edit reports</a>
+                                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-bar-chart-o pr-2"></i>Statistics</a>
+                                                <h6 class="mb-1 mt-3">Export</h6>
+                                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-file-pdf-o pr-2"></i>Export to PDF</a>
+                                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-file-excel-o pr-2"></i>Export to CSV</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <h5 class="text-dark">Annual Revenue</h5>
+                                                <h2 class="font-40 font-light text-primary mb-0">3,546</h2>
+                                            </div>
+                                        </div>
+                                        <div class="apechart-wrapper">
+                                            <div id="cardealerdemo2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xxl-3 m-b-30">
+                                <div class="card card-statistics o-hidden h-100">
+                                    <div class="card-header d-flex justify-content-between">
+                                        <div class="card-heading">
+                                            <div class="card-heading">
+                                                <h4 class="card-title">Safe Deal</h4>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <a class="p-2" href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fe fe-circle"></i>
+                                            </a>
+                                            <div class="dropdown-menu custom-dropdown dropdown-menu-right p-4">
+                                                <h6 class="mb-1">Action</h6>
+                                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-file-o pr-2"></i>View reports</a>
+                                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-edit pr-2"></i>Edit reports</a>
+                                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-bar-chart-o pr-2"></i>Statistics</a>
+                                                <h6 class="mb-1 mt-3">Export</h6>
+                                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-file-pdf-o pr-2"></i>Export to PDF</a>
+                                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-file-excel-o pr-2"></i>Export to CSV</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body px-5 pb-0 pt-2">
+                                        <div class="morris-wrapper">
+                                            <div id="cardealer1" style="height: 250px;"></div>
+                                        </div>
+                                        <div class="row mt-3 align-self-center justify-content-center">
+                                            <div class="col-sm-4">
+                                                <div class="pb-3 mt-3 text-center">
+                                                    <h3 class="mb-1 font-weight-bold text-warning">680</h3>
+                                                    <p class="text-muted"> New cars</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div class="mt-3 text-center">
+                                                    <h3 class="mb-1 font-weight-bold text-cyan">800</h3>
+                                                    <p class="text-muted"> Used cars </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xxl-4 m-b-30">
+                                <div class="card card-statistics mb-0 h-100">
+                                    <div class="card-header">
+                                        <div class="card-heading">
+                                            <h4 class="card-title">Sale analysis Trend</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card-body pt-0">
+                                        <div class="apexchart-wrapper">
+                                            <div id="stockmarketdemo8" class="chart-fit"></div>
+                                        </div>
+                                        <div class="apexchart-wrapper">
+                                            <div id="stockmarketdemo8bottom" class="chart-fit"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-8 m-b-30">
+                                <div class="card card-statistics mb-0 h-100">
+                                    <div class="card-header">
+                                        <div class="card-heading">
+                                            <h4 class="card-title">Revenue trend by salesperson</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="apexchart-wrapper">
+                                            <div id="stockmarketdemo9" class="chart-fit"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xxl-7 m-b-30">
+                                <div class="card card-statistics h-100 mb-0">
+                                    <div class="card-header d-flex justify-content-between align-items-center">
+                                        <div class="card-heading">
+                                            <div class="card-heading">
+                                                <h4 class="card-title"> User Registrations</h4>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <div class="btn-group btn-group-sm">
+                                                <button type="button" class="btn btn-light">Weekly </button>
+                                                <button type="button" class="btn btn-light">Monthly</button>
+                                                <button type="button" class="btn btn-light">Yearly</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body pt-0">
+                                        <div class="apexchart-wrapper">
+                                            <div id="datingdemo1" class="chart-fit"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-xxl-5 m-b-30">
+                                <div class="card card-statistics h-100 mb-0">
+                                    <div class="card-header d-flex justify-content-between">
+                                        <div class="card-heading">
+                                            <div class="card-heading">
+                                                <h4 class="card-title">Income Analysis</h4>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <a class="p-2" href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fe fe-circle"></i>
+                                            </a>
+                                            <div class="dropdown-menu custom-dropdown dropdown-menu-right p-4">
+                                                <h6 class="mb-1">Action</h6>
+                                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-file-o pr-2"></i>View reports</a>
+                                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-edit pr-2"></i>Edit reports</a>
+                                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-bar-chart-o pr-2"></i>Statistics</a>
+                                                <h6 class="mb-1 mt-3">Export</h6>
+                                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-file-pdf-o pr-2"></i>Export to PDF</a>
+                                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-file-excel-o pr-2"></i>Export to CSV</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <h2>3.8k</h2>
+                                                <span class="d-block mb-2 font-16">AVG sessions</span>
+                                                <span class="d-block mb-5"><b class="text-primary">-65.88%</b> vs last 1 months</span>
+                                                <p class="mb-3">Sapiente corporis fugiat, doloremque eveniet nostrum id molestiae quaerat!</p>
+                                                <a class="btn btn-round btn-inverse-primary" href="#"><b>View details </b></a>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="apexchart-wrapper">
+                                                    <div id="analytics2" class="chart-fit"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="border-top my-4"></div>
+                                        <div class="card-heading">
+                                            <h4 class="card-title">Income by department</h4>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <span>FCBK: <b>$1,475</b></span>
+                                                <div class="progress my-3" style="height: 4px;">
+                                                    <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <span>GGL: <b>$23,475</b></span>
+                                                <div class="progress my-3" style="height: 4px;">
+                                                    <div class="progress-bar bg-success" role="progressbar" style="width: 66%;" aria-valuenow="66" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <span>APL: <b>$1,658</b></span>
+                                                <div class="progress my-3" style="height: 4px;">
+                                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 78%;" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <span>SMG: <b>$12,489</b></span>
+                                                <div class="progress my-3" style="height: 4px;">
+                                                    <div class="progress-bar bg-info" role="progressbar" style="width: 55%;" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <span>MS: <b>$5,459</b></span>
+                                                <div class="progress my-3" style="height: 4px;">
+                                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 69%;" aria-valuenow="69" aria-valuemin="0" aria-valuemax="100"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xxl-4 m-b-30">
+                                <div class="card card-statistics h-100 mb-0">
+                                    <div class="card-header">
+                                        <div class="card-heading">
+                                            <h4 class="card-title">User Feedback</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="mb-1">
+                                            <div class="d-flex">
+                                                <p>Positive</p>
+                                                <h5 class="text-muted ml-auto mb-0">4251</h5>
+                                            </div>
+                                            <div class="progress progress-sm m-b-10" style="height: 5px;">
+                                                <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="mb-1">
+                                            <div class="d-flex">
+                                                <p>Negative</p>
+                                                <h5 class="text-muted ml-auto mb-0">1459</h5>
+                                            </div>
+                                            <div class="progress progress-sm m-b-10" style="height: 5px;">
+                                                <div class="progress-bar bg-info" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="apexchart-wrapper">
+                                        <div id="datingdemo4"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-5 m-b-30">
+                                <div class="card card-statistics h-100 mb-0">
+                                    <div class="card-header">
+                                        <div class="card-heading">
+                                            <h4 class="card-title">Site Visitors</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-sm-3">
+                                                <h2 class="mb-0">54,65</h2>
+                                                <span>Total visit</span>
+                                            </div>
+                                            <div class="col-sm-9 ml-auto">
+                                                <div class="row">
+                                                    <div class="border-right col mr-4">
+                                                        <h4 class="mb-0">4,251</h4>
+                                                        <span> <i class="fa fa-square pr-1 text-primary"></i> Male </span>
+                                                    </div>
+                                                    <div class="border-right col mr-4">
+                                                        <h4 class="mb-0">6,578</h4>
+                                                        <span> <i class="fa fa-square pr-1 text-info"></i> Female </span>
+                                                    </div>
+                                                    <div class="col">
+                                                        <h4 class="mb-0">2,654</h4>
+                                                        <span> <i class="fa fa-square pr-1 text-light"></i> Non registered </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="apexchart-wrapper">
+                                            <div id="datingdemo3" class="chart-fit"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-3 m-b-30">
+                                <div class="card card-statistics dating-card h-100 mb-0">
+                                    <div class="card-header">
+                                        <div class="card-heading">
+                                            <h4 class="card-title">Top Search Terms</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card-body pt-0">
+                                        <div class="apexchart-wrapper">
+                                            <div id="datingdemo2" class="chart-fit"></div>
+                                        </div>
+                                        <div class="row justify-content-center">
+                                            <div class="col ml-3">
+                                                <h4 class="mb-0">4,251</h4>
+                                                <span> <i class="fa fa-square pr-1 text-primary"></i> Desktop </span>
+                                            </div>
+                                            <div class="col">
+                                                <h4 class="mb-0">6,578</h4>
+                                                <span> <i class="fa fa-square pr-1 text-info"></i> Tablet </span>
+                                            </div>
+                                            <div class="col">
+                                                <h4 class="mb-0">2,654</h4>
+                                                <span> <i class="fa fa-square pr-1 text-cyan"></i> Mobile </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 col-xxl-4 m-b-30">
+                                <div class="card card-statistics h-100 mb-0 o-hidden">
+                                    <div class="card-header">
+                                        <div class="card-heading">
+                                            <h4 class="card-title">Most Viewed Job</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="row align-self-center">
+                                            <div class="col">
+                                                <h4>Reached 6,454</h4>
+                                                <p>Ea consectetur dolorem, enim explicabo necessitatibus</p>
+                                                <ul class="jobportaldemo2-list list-unstyled m-t-20">
+                                                    <li class="py-1"> <i class="fa fa-minus pr-2 text-primary"></i> Direct</li>
+                                                    <li class="py-1"> <i class="fa fa-minus pr-2 text-primary"></i> Referral</li>
+                                                    <li class="py-1"> <i class="fa fa-minus pr-2 text-primary"></i> Organic</li>
+                                                    <li class="py-1"> <i class="fa fa-minus pr-2 text-primary"></i> Social</li>
+                                                </ul>
+                                            </div>
+                                            <div class="apexchart-wrapper col">
+                                                <div id="jobportaldemo2" class="jobportaldemo2"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="apexchart-wrapper">
+                                        <div id="jobportaldemo5" class="chart-fit p-absolute-lrb"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-5 m-b-30">
+                                <div class="card card-statistics h-100 m-b-0">
+                                    <div class="card-header d-flex justify-content-between">
+                                        <div class="card-heading">
+                                            <div class="card-heading">
+                                                <h4 class="card-title">Income analysis</h4>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown">
+                                            <a class="p-2" href="#!" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="fe fe-more-horizontal"></i>
+                                            </a>
+                                            <div class="dropdown-menu custom-dropdown dropdown-menu-right p-4">
+                                                <h6 class="mb-1">Action</h6>
+                                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-file-o pr-2"></i>View reports</a>
+                                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-edit pr-2"></i>Edit reports</a>
+                                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-bar-chart-o pr-2"></i>Statistics</a>
+                                                <h6 class="mb-1 mt-3">Export</h6>
+                                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-file-pdf-o pr-2"></i>Export to PDF</a>
+                                                <a class="dropdown-item" href="#!"><i class="fa-fw fa fa-file-excel-o pr-2"></i>Export to CSV</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body pb-0">
+                                        <div class="row">
+                                            <div class="col-4">
+                                                <h5 class="mb-1 text-pink">Sale income</h5>
+                                                <p>18% High Then Last Month</p>
+                                            </div>
+                                            <div class="col-4">
+                                                <h5 class="mb-1 text-primary">Rent income</h5>
+                                                <p>26% High Then Last Month</p>
+                                            </div>
+                                        </div>
+                                        <div class="apexchart-wrapper">
+                                            <div id="realestatedemo1" class="chart-fit"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-xxl-3 m-b-30">
+                                <div class="card card-statistics h-100 mb-0">
+                                    <div class="card-header">
+                                        <div class="card-heading">
+                                            <h4 class="card-title">Top Buyers</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card-body pt-0">
+                                        <div class="apexchart-wrapper">
+                                            <div id="stockmarket6"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row crypto-currency">
+                            <div class="col-xxl-9">
+                                <div class="card card-statistics apexchart-tool-force-top">
+                                    <div class="card-header">
+                                        <div class="card-heading">
+                                            <h4 class="card-title">Live Chart</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card-body pt-0">
+                                        <div class="apexchart-wrapper">
+                                            <div id="crypto-demo1-candlestick"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xxl-3 m-b-30">
+                                <div class="card card-statistics bg-primary o-hidden h-100">
+                                    <div class="card-header border-0">
+                                        <div class="card-heading">
+                                            <h4 class="card-title text-white">Depth Chart</h4>
+                                        </div>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <div class="p-4">
+                                            <div class="row align-self-center">
+                                                <div class="col">
+                                                    <span class="text-white">Total</span>
+                                                    <h3 class="text-white mb-0">$12,456</h3>
+                                                </div>
+                                                <div class="col text-right">
+                                                    <span class="text-white d-block">EUR <b class="text-orange">€6,320.46</b></span>
+                                                    <span class="text-white d-block">GBP <b class="text-orange">€6,320.46</b></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="apexchart-wrapper">
+                                            <div id="cryptodemo6" class="chart-fit p-absolute p-absolute-lr w-100"></div>
+                                        </div>
+                                        <div class="crypto-chart-info p-4">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <h6 class="text-white mb-1">Open</h6>
+                                                    <strong class="text-white">$6,358.40</strong>
+                                                </div>
+                                                <div class="col-4">
+                                                    <h6 class="text-white mb-1">High</h6>
+                                                    <strong class="text-white">$9,566.45</strong>
+                                                </div>
+                                                <div class="col-4">
+                                                    <h6 class="text-white mb-1">Low</h6>
+                                                    <strong class="text-white">$1,465.45</strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end chart contant -->
+                    </div>
+                    <!-- end container-fluid -->
+                </div>
+                <!-- end app-main -->
+            </div>
+            <!-- end app-container -->
+            <!-- begin footer -->
+            <footer class="footer">
+                <div class="row">
+                    <div class="col-12 col-sm-6 text-center text-sm-left">
+                        <p>&copy; Copyright 2019. All rights reserved.</p>
+                    </div>
+                    <div class="col  col-sm-6 ml-sm-auto text-center text-sm-right">
+                        <p><a target="_blank" href="https://www.templateshub.net">Templates Hub</a></p>
+                    </div>
+                </div>
+            </footer>
+            <!-- end footer -->
+        </div>
+        <!-- end app-wrap -->
+    </div>
+    <!-- end app -->
+
+    <!-- plugins -->
+    <script src="assets/js/vendors.js"></script>
+
+    <!-- custom app -->
+    <script src="assets/js/app.js"></script>
+</body>
+
+
+</html>
