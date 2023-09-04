@@ -1,0 +1,295 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\sa200\sl240\slmult1\b\f0\fs22\lang9 bash\par
+///////////////////////////////////////////////////////////////////////////////////////\par
+shell\par
+\par
+///////////////////////////////////////////////////////////////////////////////////////\par
+\par
+git\par
+creating a new branch : root@ip-172-31-35-1:/home/ubuntu/ci-cd# git checkout -b features/database\par
+clonning by token : git clone {{\field{\*\fldinst{HYPERLINK https://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@github.com/muhammadtouseef11222211/ci-cd }}{\fldrslt{https://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@github.com/muhammadtouseef11222211/ci-cd\ul0\cf0}}}}\f0\fs22\par
+resolving conflict : git add <resolved-file>  , git rebase --continue , git push origin HEAD:<name-of-remote-branch>\par
+\par
+git stash , git stash pop , (for ignorning changing and comming back them)\par
+git log (for history)\par
+copy hash , then git checkout hash\par
+git reset --hard HEAD~1 (HERE 1 SHOWS TO UNDO ONLY 1 COMMIT REVERT , also discard the changes)\par
+git reset -- HEAD~1 (it keep the changes but delete the commit)\par
+git commit -amend (add commit to last commit)\par
+git push --force (to do if any push become wrong)\par
+git revert (hash of commit) => good approach (it creates another file with revert tag to show it has been change)\par
+to pull changes from master to your branch (git checkout master , git pull , git merge master)\par
+netstat -lpnt\par
+\par
+/////////////////////////////////////////////////////////////////////////////////////\par
+artifact repository and manager nexux:\par
+\par
+///////////////////////////////////////////////////////////////////////////////////////\par
+\par
+maven\par
+\par
+///////////////////////////////////////////////////////////////////////////////////////\par
+\par
+docker\par
+docker run -d -p6001:6379 --name redis-older redis:4.0\par
+root@ip-172-31-45-78:/home# docker exec -it ba57c4a579bf /bin/bash\par
+\par
+,\par
+root@ip-172-31-45-78:/home# docker exec -it ba57c4a579bf /bin/bash\par
+to go to terminal of container,\par
+\par
+root@ba57c4a579bf:/data# ^C\par
+root@ba57c4a579bf:/data# ls\par
+root@ba57c4a579bf:/data# pwd /d\par
+data/ dev/\par
+root@ba57c4a579bf:/data# pwd /ddata\par
+/data\par
+root@ba57c4a579bf:/data# cd /\par
+root@ba57c4a579bf:/# ls\par
+bin   data  etc   lib    lib64   media  opt   root  sbin  sys  usr\par
+boot  dev   home  lib32  libx32  mnt    proc  run   srv   tmp  var\par
+root@ba57c4a579bf:/# env\par
+HOSTNAME=ba57c4a579bf\par
+REDIS_DOWNLOAD_SHA=ce250d1fba042c613de38a15d40889b78f7cb6d5461a27e35017ba39b07221e3\par
+PWD=/\par
+HOME=/root\par
+REDIS_VERSION=7.0.11\par
+GOSU_VERSION=1.16\par
+TERM=xterm\par
+REDIS_DOWNLOAD_URL={{\field{\*\fldinst{HYPERLINK http://download.redis.io/releases/redis-7.0.11.tar.gz }}{\fldrslt{http://download.redis.io/releases/redis-7.0.11.tar.gz\ul0\cf0}}}}\f0\fs22\par
+SHLVL=1\par
+PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin\par
+_=/usr/bin/env\par
+OLDPWD=/data\par
+root@ba57c4a579bf:/#,\par
+\par
+,\par
+root@ip-172-31-45-78:/# docker run -it --rm \\\par
+    --network ubuntu_my-network \\\par
+    --name mongo-express \\\par
+    -p 8081:8081 \\\par
+    -e ME_CONFIG_OPTIONS_EDITORTHEME="beautiful_robinson" \\\par
+    -e ME_CONFIG_MONGODB_SERVER="172.18.0.2" \\\par
+    -e ME_CONFIG_BASICAUTH_USERNAME="user" \\\par
+    -e ME_CONFIG_BASICAUTH_PASSWORD="fairly long password" \\\par
+    mongo-express\par
+Welcome to mongo-express\par
+\par
+docker-compose\par
+,\par
+root@ip-172-31-45-78:/# docker-compose -f /root/a.yaml up\par
+stat /root/a.yaml: no such file or directory\par
+root@ip-172-31-45-78:/# vim a.yaml\par
+root@ip-172-31-45-78:/# sudo mv /home/mongo.yaml /root/\par
+root@ip-172-31-45-78:/# ls\par
+a.yaml  bin   dev  home  lib32  libx32      media  opt   root  sbin  srv  sys  usr\par
+app     boot  etc  lib   lib64  lost+found  mnt    proc  run   snap  ssh  tmp  var\par
+root@ip-172-31-45-78:/# sudo docker-compose -f /root/mongo.yaml up\par
+,\par
+------------------------\par
+\par
+\par
+(node:8) [MONGODB DRIVER] Warning: Current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option \{ useUnifiedTopology: true \} to the MongoClient constructor.\par
+Mongo Express server listening at {{\field{\*\fldinst{HYPERLINK http://0.0.0.0:8081 }}{\fldrslt{http://0.0.0.0:8081\ul0\cf0}}}}\f0\fs22\par
+Server is open to allow connections from anyone (0.0.0.0)\par
+^Croot@ip-172-31-45-78:/# docker ps\par
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS                                           NAMES\par
+be4a567b1a55   mongo     "docker-entrypoint.s\'85"   33 minutes ago   Up 33 minutes   0.0.0.0:27017->27017/tcp, :::27017->27017/tcp   pensive_jackson\par
+root@ip-172-31-45-78:/# docker run -it --rm     --network web_default     --name mongo-express     -p 8081:8081     -e ME_CONFIG_OPTIONS_EDITORTHEME="ambiance"     -e ME_CONFIG_MONGODB_SERVER="172.18.0.1"     -e ME_CONFIG_BASICAUTH_USERNAME="user"     -e ME_CONFIG_BASICAUTH_PASSWORD="fairly long password"     mongo-express\par
+Welcome to mongo-express\par
+------------------------\par
+\par
+\par
+(node:7) [MONGODB DRIVER] Warning: Current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option \{ useUnifiedTopology: true \} to the MongoClient constructor.\par
+Mongo Express server listening at {{\field{\*\fldinst{HYPERLINK http://0.0.0.0:8081 }}{\fldrslt{http://0.0.0.0:8081\ul0\cf0}}}}\f0\fs22\par
+Server is open to allow connections from anyone (0.0.0.0),\par
+docker exec -u 0 -it unruffled_cerf /bin/bash  => go to root user of container\par
+getting rid of permission docker exec -u root -it unruffled_cerf /bin/bash\par
+\par
+///////////////////////////////////////////////////////////////////////////////////////\par
+\par
+jenkins:\par
+\par
+\par
+\par
+///////////////////////////////////////////////////////////////////////////////////////\par
+\par
+ansible\par
+\par
+///////////////////////////////////////////////////////////////////////////////////////\par
+\par
+kubernates\par
+\par
+///////////////////////////////////////////////////////////////////////////////////////\par
+\par
+teraform\par
+\par
+///////////////////////////////////////////////////////////////////////////////////////\par
+\par
+ci-cd\par
+\par
+\par
+\par
+\par
+\par
+jenkins \b0\par
+
+\pard\sa200\sl276\slmult1\par
+\b  installation commands ( sudo yum install java-17-devel\par
+   java -version\par
+   wget -O /tmp/jenkins.rpm {{\field{\*\fldinst{HYPERLINK https://pkg.jenkins.io/redhat-stable/jenkins-2.401.2-1.1.noarch.rpm }}{\fldrslt{https://pkg.jenkins.io/redhat-stable/jenkins-2.401.2-1.1.noarch.rpm\ul0\cf0}}}}\f0\fs22\par
+   sudo yum install /tmp/jenkins.rpm\par
+sudo service jenkins start\par
+sudo service jenkins status)\par
+\b0\par
+\par
+AWS ID 629341308254\par
+Certainly! Here's a step-by-step guide to create the Data Engineering Pipeline with DevOps Tools project. I'll provide important information and considerations for each step:\par
+\par
+Step 1: Version Control and Project Setup\par
+\par
+Create a new Git repository on a platform like GitHub or GitLab.\par
+Choose a descriptive repository name that reflects the project's purpose.\par
+Set up the basic repository structure with directories like src, docker, terraform, and ansible.\par
+Step 2: Data Collection and Storage\par
+\par
+Identify the data sources you'll be working with (APIs, databases, files, etc.).\par
+Choose a cloud storage service (Amazon S3, Google Cloud Storage) to store raw data.\par
+Write Python scripts to fetch and save raw data to the chosen storage.\par
+Step 3: Data Transformation with Apache Spark\par
+\par
+Install Apache Spark and PySpark on your development machine.\par
+Develop Spark jobs using PySpark to transform raw data (e.g., cleaning, aggregating).\par
+Create separate scripts for each transformation step and store them in the src directory.\par
+Step 4: Containerization with Docker\par
+\par
+Set up Docker on your machine.\par
+Create Dockerfiles for each Spark job in the docker directory.\par
+Define required dependencies, environment variables, and entry points.\par
+Step 5: Continuous Integration with Jenkins\par
+\par
+Install and configure Jenkins on a server or cloud instance.\par
+Create a new Jenkins pipeline linked to your Git repository.\par
+Configure the Jenkins pipeline to build Docker images and run tests on the Spark jobs.\par
+Implement automated tests using testing frameworks like PyTest.\par
+Step 6: Container Orchestration with Kubernetes\par
+\par
+Choose a cloud provider or use a local Kubernetes cluster (e.g., Minikube).\par
+Deploy the Kubernetes cluster using Terraform, defining nodes, network, and security settings.\par
+Set up Kubernetes namespaces for isolation.\par
+Learn Kubernetes basics like creating deployments, services, and pods.\par
+Step 7: Infrastructure as Code with Terraform\par
+\par
+Install Terraform on your machine.\par
+Define the Kubernetes cluster infrastructure using Terraform configuration files.\par
+Include resource definitions for nodes, networking, and other required resources.\par
+Step 8: Configuration Management with Ansible\par
+\par
+Install Ansible on your machine.\par
+Create Ansible playbooks to configure Kubernetes nodes.\par
+Automate dependency installation, firewall settings, and Kubernetes setup.\par
+Store sensitive information like credentials securely using Ansible Vault.\par
+Step 9: Workflow Automation with Apache Airflow\par
+\par
+Install and configure Apache Airflow on your machine or a server.\par
+Set up Airflow's web UI and scheduler.\par
+Develop DAGs to define workflows for Spark job execution and scheduling.\par
+Configure task dependencies, retries, and notifications.\par
+Step 10: Monitoring and Logging\par
+\par
+Choose monitoring and logging solutions (Prometheus, Grafana, ELK stack).\par
+Set up monitoring for Kubernetes cluster health, resource utilization, and Spark job performance.\par
+Configure log shipping from Docker containers and Kubernetes pods to the chosen logging solution.\par
+Step 11: Automated Deployment with Jenkins\par
+\par
+Extend the Jenkins pipeline to include deployment steps.\par
+Use Jenkins plugins or Kubernetes CLI commands to deploy Spark jobs to the Kubernetes cluster.\par
+Implement CD practices like automated rollbacks and version tagging.\par
+Step 12: Documentation and Collaboration\par
+\par
+Create a README.md file in your repository with project information and setup instructions.\par
+Document the repository structure, how to set up the environment, and run the pipeline.\par
+Use Git branching strategies (e.g., GitFlow) for collaborative development.\par
+Encourage team members to follow coding standards and participate in code reviews.\par
+Remember that each step may require further research and learning, especially if you're new to some of the technologies involved. Consider breaking down each step into subtasks and gradually building your project. Also, adapt the project according to your preferences and requirements, as well as any specific tools or technologies you're more comfortable with. Good luck!\par
+\par
+\par
+\par
+\par
+..............................................\par
+Absolutely, let's refine the project to focus more on the data engineering aspect while incorporating a mix of popular DevOps tools. Here's an updated version of the project:\par
+\par
+Project: Building a Data Engineering Pipeline with DevOps Tools\par
+\par
+Overview:\par
+In this project, you'll design and implement a data engineering pipeline that involves collecting, processing, and analyzing data. You'll leverage a range of DevOps tools and technologies to automate and manage the pipeline effectively.\par
+\par
+Technologies and Tools:\par
+\par
+Python: For scripting and data manipulation.\par
+Git: Version control for source code management.\par
+Jenkins: Continuous Integration/Continuous Deployment (CI/CD) tool for automation.\par
+Docker: Containerization for consistent environment setup.\par
+Kubernetes: Container orchestration for managing scalable deployments.\par
+Terraform: Infrastructure as Code tool for provisioning resources.\par
+Ansible: Configuration management and automation.\par
+Apache Hadoop: Distributed storage and processing framework.\par
+Apache Spark: Distributed data processing and analytics.\par
+Apache Airflow: Workflow automation and scheduling.\par
+Project Steps:\par
+\par
+Version Control and Project Setup:\par
+\par
+Create a Git repository to host your project code.\par
+Organize the repository structure with directories for different components.\par
+Data Collection and Storage:\par
+\par
+Identify a data source (e.g., APIs, databases, files).\par
+Write Python scripts to retrieve and store raw data in a storage service like Amazon S3 or Google Cloud Storage.\par
+Data Transformation with Apache Spark:\par
+\par
+Develop Spark jobs using PySpark to transform and cleanse the raw data.\par
+Implement ETL processes to convert data into a suitable format for analysis.\par
+Containerization with Docker:\par
+\par
+Create Dockerfiles for the Spark job components.\par
+Build Docker images to encapsulate your Spark jobs and their dependencies.\par
+Continuous Integration with Jenkins:\par
+\par
+Set up Jenkins to monitor your Git repository for changes.\par
+Configure Jenkins pipelines to build Docker images and run tests on the Spark jobs.\par
+Container Orchestration with Kubernetes:\par
+\par
+Deploy the Dockerized Spark jobs to a Kubernetes cluster for scalability.\par
+Use Kubernetes features like scaling, load balancing, and rolling updates.\par
+Infrastructure as Code with Terraform:\par
+\par
+Define the Kubernetes cluster infrastructure using Terraform.\par
+Automate the provisioning of the required resources on your cloud provider (e.g., AWS, GCP, Azure).\par
+Configuration Management with Ansible:\par
+\par
+Use Ansible playbooks to configure Kubernetes nodes and manage dependencies.\par
+Ensure consistent settings across the cluster.\par
+Workflow Automation with Apache Airflow:\par
+\par
+Set up Airflow to define and schedule data processing workflows.\par
+Create DAGs (Directed Acyclic Graphs) to orchestrate Spark job execution.\par
+Monitoring and Logging:\par
+\par
+Integrate monitoring tools (e.g., Prometheus, Grafana) to track cluster performance.\par
+Configure centralized logging using tools like the ELK stack (Elasticsearch, Logstash, Kibana).\par
+Automated Deployment with Jenkins:\par
+\par
+Extend the Jenkins pipeline to automatically deploy Spark jobs to the Kubernetes cluster.\par
+Implement CD to ensure new data processing code is efficiently deployed.\par
+Documentation and Collaboration:\par
+\par
+Document the project architecture, setup instructions, and workflow details.\par
+Collaborate with your team by using Git branching strategies and pull requests.\par
+This refined project combines both data engineering and DevOps aspects, incorporating a modern technology stack to streamline the entire process. Remember that projects like these can be complex, so feel free to adjust the scope and depth based on your experience and project goals. Happy building!\par
+\par
+\par
+}
+ 
