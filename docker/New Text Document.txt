@@ -1,0 +1,28 @@
+# Use the official Jenkins image as the base
+FROM jenkins/jenkins
+
+# Switch to root user to install dependencies
+USER root
+
+# Install prerequisites, Docker repository setup, and install Docker
+RUN apt-get update && apt-get install -y \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common \
+    && curl -fsSL https://download.docker.com/linux/debian/gpg | apt-key add - \
+    && add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/debian $(lsb_release -cs) stable" \
+    && apt-get update \
+    && apt-get install -y docker-ce docker-ce-cli containerd.io
+
+# Install PHP and Composer
+RUN apt-get install -y php php-cli php-mbstring php-xml composer
+
+# Switch back to the Jenkins user
+USER jenkins
+
+
+-------------------------------------------------------------------
+docker build -t testcontainer .
+docker run -v /var/run/docker.sock:/var/run/docker.sock -d -p 8080:8080 --name my-jenkins --user root testcontainer 
